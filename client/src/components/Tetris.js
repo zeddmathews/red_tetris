@@ -3,11 +3,12 @@ import React from 'react';
 import PlayField from './PlayField';
 import Text from './Text';
 import StartButton from './StartButton';
+import { createPlayField } from '../gameHelpers';
 
-export default function Tetris() {
+const Tetris = () => {
 	return (
 		<div>
-			<PlayField />
+			<PlayField playfield={createPlayField()}/>
 			<aside>
 				<div>
 					<Text text="Score"/>
@@ -19,3 +20,5 @@ export default function Tetris() {
 		</div>
 	);
 }
+
+export default Tetris;

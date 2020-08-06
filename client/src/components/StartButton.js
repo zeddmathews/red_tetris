@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function StartButton({ callback }) {
-	return (
-		<div>
-			Start game
-		</div>
-	);
-};
+const StartButton = ({ callback }) => (
+	<div>
+		Start game
+	</div>
+)
+
+export default StartButton;
